@@ -1,0 +1,5 @@
+<% if @schools.present? %>
+	$("#school").html("<%= j render partial: 'index' %>");
+<% else %>
+	$('#school').html("<%= j (render partial: 'form') %>");
+<% end %>

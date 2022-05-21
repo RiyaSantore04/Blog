@@ -1,0 +1,5 @@
+<% if @success %>
+	$("#all_list").append("<%= j render partial: 'list', locals: {article: @article} %>");
+<% else %>
+	$('.abc1').html("<%= j (render partial: 'form') %>");
+<% end %>

@@ -1,0 +1,9 @@
+<% byebug %>
+<% if @success %>
+    $("#article<%= @article.id %>").replaceWith("<%= j render partial: 'list', locals: {article: @article} %>");
+<% else %>
+    $('.abc1').html("<%= j (render partial: 'form') %>");
+<% end %>
+
+
+

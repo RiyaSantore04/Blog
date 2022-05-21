@@ -1,0 +1,13 @@
+
+
+<li id= "<%= school.id %>">
+	<span><%= school.f_name%></span>
+	<span><%= school.l_name%></span>
+
+    <li><%= link_to "Edit", edit_school_path(school), remote: true %></li>
+
+  <li><%= link_to "Destroy", school_path(school), data: {
+                    method: :delete,
+                    confirm: "Are you sure?"
+                  } %></li>
+</li>

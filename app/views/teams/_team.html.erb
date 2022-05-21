@@ -1,0 +1,11 @@
+<li id= "<%= team.id %>">
+  <span><%= team.title %></span>
+  <span><%= team.body %></span>
+
+    <li><%= link_to "Edit", edit_team_path(team), remote: true %></li>
+
+  <li><%= link_to "Destroy", team_path(team), data: {
+                    method: :delete,
+                    confirm: "Are you sure?"
+                  } %></li>
+</li>

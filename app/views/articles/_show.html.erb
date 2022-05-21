@@ -1,0 +1,18 @@
+<h4><%= @article.title %></h4>
+
+<p><%= @article.body %></p>
+
+<ul>
+  
+  <div class="abc">
+    <li><%= link_to "Edit", edit_article_path(@article), remote: true %></li>
+  </div>
+  <li><%= link_to "Destroy", article_path(@article), data: {
+                    method: :delete,
+                    confirm: "Are you sure?"
+                  } %></li>
+</ul>
+<br>
+
+<%#= link_to 'Back', :back %>
+<%= link_to "Back", articles_path %>
